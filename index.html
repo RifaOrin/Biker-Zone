@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -36,6 +42,9 @@
     <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
       }
     </style>
   </head>
@@ -294,7 +303,7 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center"
         >
           <!-- Card 1 -->
-          <div class="card bg-base-100 p-3 shadow-md w-96">
+          <div class="card bg-base-100 p-3 shadow-md w-80 lg:w-96">
             <figure>
               <img src="./images/others/latest1.png" alt="Shoes" />
             </figure>
@@ -318,7 +327,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="card bg-base-100 p-3 shadow-md w-96">
+          <div class="card bg-base-100 p-3 shadow-md w-80 lg:w-96">
             <figure>
               <img src="./images/others/latest2.png" alt="Shoes" />
             </figure>
@@ -342,7 +351,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="card bg-base-100 p-3 shadow-md w-96">
+          <div class="card bg-base-100 p-3 shadow-md w-80 lg:w-96">
             <figure>
               <img src="./images/others/latest3.png" alt="Shoes" />
             </figure>
@@ -375,9 +384,11 @@
           Happy <span class="text-[#E76F51]">Clients says</span>
         </h2>
         <!-- Card Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-0 place-items-center"
+        >
           <!-- Card 01 -->
-          <div class="card bg-[#FFFFFF] w-96 border border-[#DEDEDE]">
+          <div class="card bg-[#FFFFFF] w-80 lg:w-96 border border-[#DEDEDE]">
             <figure class="px-10 pt-10">
               <img
                 src="./images/others/user-1.png"
@@ -410,7 +421,7 @@
             </div>
           </div>
           <!-- Card 02 -->
-          <div class="card bg-[#FFFFFF] w-96 border border-[#DEDEDE]">
+          <div class="card bg-[#FFFFFF] w-80 lg:w-96 border border-[#DEDEDE]">
             <figure class="px-10 pt-10">
               <img
                 src="./images/others/user-2.png"
@@ -443,7 +454,7 @@
             </div>
           </div>
           <!-- Card 03 -->
-          <div class="card bg-[#FFFFFF] w-96 border border-[#DEDEDE]">
+          <div class="card bg-[#FFFFFF] w-80 lg:w-96 border border-[#DEDEDE]">
             <figure class="px-10 pt-10">
               <img
                 src="./images/others/user-3.png"
@@ -477,8 +488,103 @@
           </div>
         </div>
       </section>
+      <!-- Frequently Asked Questions -->
+      <section class="mb-[130px]">
+        <h2
+          class="font-semibold text-3xl md:text-4xl lg:text-5xl mb-16 text-center"
+        >
+          Frequently Asked <span class="text-[#E76F51]">Questions</span>
+        </h2>
+        <!-- Question Section -->
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-0"
+        >
+          <div class="w-3/4">
+            <img src="images/others/faq.png" alt="" />
+          </div>
+          <div class="space-y-5 w-4/5">
+            <div
+              tabindex="0"
+              class="collapse collapse-arrow border-[#D5E5FB] bg-[#FFFFFF] border rounded"
+            >
+              <div
+                class="collapse-title text-xl font-medium text-[#383838] font-inter"
+              >
+                What are the most important things I should know about riding a
+                bike?
+              </div>
+              <div class="collapse-content text-base leading-7 text-[#7E848C]">
+                <p>
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-arrow border-[#D5E5FB] bg-[#FFFFFF] border rounded"
+            >
+              <div
+                class="collapse-title text-xl font-medium text-[#383838] font-inter"
+              >
+                How can I tell if my helmet is old and I need a new one?
+              </div>
+              <div class="collapse-content text-base leading-7 text-[#7E848C]">
+                <p>
+                  A helmet needs replacement if it is generally older than five
+                  years, even if it looks fine, because the protective materials
+                  naturally break down over time.
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-arrow border-[#D5E5FB] bg-[#FFFFFF] border rounded"
+            >
+              <div
+                class="collapse-title text-xl font-medium text-[#383838] font-inter"
+              >
+                My bike has been in storage is it safe to ride?
+              </div>
+              <div class="collapse-content text-base leading-7 text-[#7E848C]">
+                <p>
+                  It is generally safe to ride, but you should always perform a
+                  thorough safety check first, especially if it was stored for a
+                  long time or in a non-ideal location (like a damp shed).
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-arrow border-[#D5E5FB] bg-[#FFFFFF] border rounded"
+            >
+              <div
+                class="collapse-title text-xl font-medium text-[#383838] font-inter"
+              >
+                What rules should I follow when riding my bike?
+              </div>
+              <div class="collapse-content text-base leading-7 text-[#7E848C]">
+                <p>
+                  The most important rule is to obey all traffic laws just like
+                  a car, including stopping at red lights and stop signs, and
+                  always riding with the flow of traffic. ou must wear a
+                  properly fitted helmet on every ride for head protection and
+                  strive to be visible by wearing bright clothing and using
+                  lights, especially at night. To ensure you are predictable,
+                  always use hand signals when you plan to turn or slow down,
+                  and stay alert for opening car doors and road hazards.
+                  Finally, make sure to ride far enough from the curb so you are
+                  seen, but pull over to let traffic pass when safe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="bg-[#0B0D17]"></footer>
   </body>
 </html>
